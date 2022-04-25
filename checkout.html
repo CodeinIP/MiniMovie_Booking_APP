@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      
+      #book_movie{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        padding:3%;
+      }
+      #book_movie>div{
+        /* border:1px solid  */
+        height: 80vh;
+      }
+      #form{
+        /* border:1px solid black; */
+        display:inline-block;
+        /* align-items: center; */
+        padding: 10%;
+      }
+      input{
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid violet;
+        border-radius: 5px;
+        color:green;
+        font-size: 15px;
+      }
+      #user-detail{
+        background-color: rgb(247, 125, 81);
+        /* border:1px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1 id="wallet"></h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+    </div>
+    <div id="book_movie">
+      <div id="user-detail">
+        <!-- input field to accept user name with id as "user_name"  -->
+        <!-- input field to accept number of seats with id as "number_of_seats"  -->
+        <!-- A submit button to confirm booking with id as "confirm"  -->
+        <form id="form">
+          <input id="user_name" type="text" placeholder="Enter your name ....">
+          <input id="number_of_seats" type="number" placeholder="No. of seats">
+          <button id="confirm">Book Now</button>
+        </form>
+      </div>
+
+      <div id="movie">
+        <!-- Append the selected movie for booking here -->
+        <!-- movie should have title and image  -->
+        <!-- It should be the same movie you selected for booking  -->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/checkout.js"></script>
